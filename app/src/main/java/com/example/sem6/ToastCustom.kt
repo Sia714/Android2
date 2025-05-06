@@ -23,5 +23,14 @@ class ToastCustom : AppCompatActivity() {
             toast.view=lay
             toast.show()
         }
+//         OR
+//        but.setOnClickListener{
+//            Toast(applicationContext).apply {
+//                view = layoutInflater.inflate(R.layout.toastimage, null)
+//                setGravity(Gravity.BOTTOM, 0, 20)
+//                duration = Toast.LENGTH_LONG
+//                show()
+//            }
+//        }
     }
 }

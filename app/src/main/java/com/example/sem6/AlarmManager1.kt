@@ -37,8 +37,9 @@ class AlarmManager1 : AppCompatActivity() {
 
     private fun setAlarm(delay: Int) {
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        val intent = Intent(this, AlarmManagerReceiver::class.java)
-        intent.action = "com.example.ALARM_TRIGGERED"
+        val intent = Intent(this, AlarmManagerReceiver::class.java).apply{
+            action = "com.example.ALARM_TRIGGERED"
+        }
         val pendingIntent = PendingIntent.getBroadcast(
             this,
             0,

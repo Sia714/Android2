@@ -2,12 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
-
-
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,10 +21,58 @@
         android:theme="@style/Theme.Sem6"
         tools:targetApi="31">
         <activity
-            android:name=".AlarmManager1"
-            android:exported="false" />
+            android:name=".InternalStorage2"
+            android:exported="true" />
         <activity
-            android:name=".jobScheduler"
+            android:name=".TimePicker"
+            android:exported="true" />
+        <activity
+            android:name=".DynamicScreenChange"
+            android:exported="true" />
+        <activity
+            android:name=".CA"
+            android:exported="true" />
+        <activity
+            android:name=".DrawerLayout"
+            android:exported="true" />
+        <activity
+            android:name=".swipe_view"
+            android:exported="true" />
+        <activity
+            android:name=".ExternalDetails"
+            android:exported="true" />
+        <activity
+            android:name=".ExternalStorage"
+            android:exported="true" />
+        <activity
+            android:name=".InternalStorageEmp"
+            android:exported="true" />
+        <activity
+            android:name=".InternalStorage"
+            android:exported="true" />
+        <activity
+            android:name=".Datepicker"
+            android:exported="true" />
+        <activity
+            android:name=".datatransfer"
+            android:exported="true" />
+        <activity
+            android:name=".DynamicFragActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AlarmManager1"
+            android:exported="true" />
+
+        <receiver
+            android:name=".AlarmManagerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.ALARM_TRIGGERED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".jobSchedule"
             android:exported="true" />
         <activity
             android:name=".pendingIntent"

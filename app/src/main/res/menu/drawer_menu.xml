@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/profile"
+        android:icon="@drawable/baseline_account_box_24"
+        android:title="Profile" />
+    <item android:id="@+id/camera"
+        android:icon="@drawable/outline_art_track_24"
+        android:title="Camera" />
+    <item android:id="@+id/chat"
+    android:icon="@drawable/outline_bar_chart_24"
+    android:title="Chat" />
+</menu>

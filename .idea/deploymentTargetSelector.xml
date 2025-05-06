@@ -13,16 +13,19 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="listView">
+      <SelectionState runConfigName="DynamicFragActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Toast">
+      <SelectionState runConfigName="Datepicker">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ToastCustom">
+      <SelectionState runConfigName="InternalStorage">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="pendingIntent">
+      <SelectionState runConfigName="swipe_view">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="CA">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
